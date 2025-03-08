@@ -1,16 +1,32 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #8b8888;
 }
 
 .container{
     /* border: 1px solid #000; */
+    position: relative;
     width: max-content;
     padding: 20px;
     background-color: #e0e0e0;
     margin: auto;
     border-radius: 10px;
+}
+
+.brain-image1,.brain-image2{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.brain-image1{
+    left: 10%;
+    top: 5%;
+}
+.brain-image2{
+    right: 10%;
+    top: 5%;
 }
 
 .game-board {
@@ -57,7 +73,7 @@ button:hover{
 #player-display, #scores {
     font-size: 20px;
     margin-top: 25px;
-    color: #333;
+    font-weight: bold;
 }
 
 #scores {
@@ -80,5 +96,20 @@ button:hover{
 
     button,#player-display, #scores {
         font-size: 25px;
+    }
+
+    .brain-image1,.brain-image2{
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
+    .brain-image1{
+        left: 9%;
+        top: 6%;
+    }
+    .brain-image2{
+        right: 9%;
+        top: 6%;
     }
 }
